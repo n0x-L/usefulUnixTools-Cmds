@@ -11,5 +11,8 @@ Move a file/folder to another folder:
 
     mv ../source_file.file ../destination_folder
     
+Remove a directory:
+      rmdir nameOfDirectoryToDelete
+    
   
 
