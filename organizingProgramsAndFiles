@@ -1,0 +1,11 @@
+Note: Programs which are available to your cli in any directory are kept in /usr/local/bin
+      So you can move program files to this folder, for programs you want accessible to you
+      from anywher in your cli. And to ensure you don't get blocked from permissions use chmod +x applicationOrFileName
+
+
+Move a file/folder to another folder:
+
+    mv ../source_file.file ../destination_folder
+    
+  
+
