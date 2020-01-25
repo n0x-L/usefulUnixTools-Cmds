@@ -1,0 +1,27 @@
+Lab Setup:
+1. Install java jdk
+2. Install apktool, put in /usr/local/bin
+3. Install dex2jar, put in /usr/local/bin, run chmod +x as needed
+4. Install jd-gui
+
+Step 1:
+To use apktool to decompile apk, go to folder with .apk files, in terminal type:
+apktool d 269227c4c4770e109e53c6cf87bd9bde367843c4806f5975c5aa317f318e28a9.apk
+(you can use tab to autocomplete when you start type the name of the apk "26...tab")
+
+Step 2: use dex2jar to convert bytecode file to jar
+To view all dex2jar operations, use ls in usr/local/bin. They are all prefixed with 'd2j-'
+We use d2j-dex2jar.sh which is a bash script that will convert our dex file into a jar file
+-chmod +x d2j-*.sh to ensure we can run the bash script
+-type in commands:
+	sh d2j-dex2jar.sh -f path_to_apk_file.apk 
+
+Step 3: View jar in jd-gui
+
+
+---------------------
+Dex2Jar cmds:
+
+d2j-* -h : help
+d2j-smali -o myNewDexFileName path/to/smali/folder/or/file : convert a smali file (or folder) to a dex file
+dex2jar -f ../path/to/.apk/file : convert dex file to jar file
