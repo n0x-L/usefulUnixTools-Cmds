@@ -8,11 +8,14 @@ Note: Programs which are available to your cli in any directory are kept in /usr
 
 DIRECTORIES/FILES
 Move a file/folder to another folder:
-
     mv ../source_file.file ../destination_folder
     
+Create a directory:
+      mkdir myNewDirectory
+      
 Remove a directory:
       rmdir nameOfDirectoryToDelete
+     
     
   
 
