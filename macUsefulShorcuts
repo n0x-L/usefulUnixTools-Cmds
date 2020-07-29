@@ -2,4 +2,4 @@ TERMINAL:
 tab - autocomplete name
 
 GUI:
-command then space - search
+command followed by space - search entire computer
